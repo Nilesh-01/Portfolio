@@ -42,7 +42,7 @@ const ContactUs = ({ setActive }: any) => {
     sendDetails({
       message: message,
       phone: phone,
-      to_name: "Nishu",
+      to_name: "Nilesh",
       from_name: `${firstName} ${lastName}`,
       reply_to: email,
     });
