@@ -1,10 +1,8 @@
 import "./index.style.scss";
 import ACADUP from "../../assets/acadup.jpeg";
 import EXPENSE from "../../assets/expense.jpeg";
-import SLOTIFY from "../../assets/slotify.jpeg";
+import POKEDEX from "../../assets/POKEDEX.jpg"
 import TruthPulse from "../../assets/TruthPulse.jpg"
-import CONNECT from "../../assets/connect.jpeg";
-import CODITAS from "../../assets/coditas.jpg";
 import ACADUP_LOGO from "../../assets/android-app.png";
 import EXPENSE_MANAGER from "../../assets/android-app.png";
 import TASK_MANGER from "../../assets/task-manager.png";
@@ -43,7 +41,7 @@ const projectsData = [
       "A news app using react that fetches the latest news with different categories with simple and efficient design",
   },
   {
-    id: 5,
+    id: 4,
     name: "Octom",
     icon: TASK_MANGER,
     category: REACT,
@@ -52,16 +50,16 @@ const projectsData = [
       "A React-based task management dashboard provides a visually intuitive and responsive platform for overseeing project portfolios. The dashboard's user-friendly design ensures efficient task tracking and decision-making.",
   },
   {
-    id: 6,
+    id: 5,
     name: "Sky Cast",
     icon: WEATHER_APP,
     category: REACT,
-    link:"sky-cast-psi.vercel.app",
+    link:"https://sky-cast-psi.vercel.app/",
     description:
       "The React-based weather app provides a seamless and user-friendly experience, displaying real-time weather data with dynamic updates. Its intuitive design allows users to easily search and view weather details for specific locations.",
   },
   {
-    id: 7,
+    id: 6,
     name: "Go vahan",
     icon: GO_VAHAN,
     category: REACT,
@@ -70,12 +68,21 @@ const projectsData = [
       "A React-based transportation website's landing page offers a sleek and responsive interface, utilizing components for dynamic content showcasing services, pricing, and contact details. Real-time updates and smooth transitions enhance user experience. The design prioritizes simplicity, providing visitors with an efficient introduction to the transportation services offered.",
   },
   {
-    id:8,
+    id: 7,
     name:"Shortly",
     icon:SHORTLY,
     link:"https://shortly-sigma-topaz.vercel.app/",
     category:REACT,
     description:"A React-powered URL shortening website delivers a user-friendly experience, allowing seamless input and instant generation of shortened links. The intuitive interface, coupled with React's real-time updates, ensures efficient URL management. The design prioritizes simplicity, making the process quick and straightforward for users."
+  },
+  {
+    id: 8,
+    name: "Pokedex",
+    icon: POKEDEX,
+    category: REACT,
+    link:"https://pokedex-two-gamma.vercel.app/",
+    description:
+      "A React-based Pokemon website which offers a sleek and responsive interface, utilizing components for dynamic content showcasing pokemon details. Real-time updates and smooth transitions enhance user experience. The design prioritizes simplicity and smooth user experience.",
   }
 ];
 
