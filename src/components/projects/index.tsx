@@ -1,6 +1,7 @@
 import "./index.style.scss";
 import ACADUP from "../../assets/acadup.jpeg";
 import EXPENSE from "../../assets/expense.jpeg";
+import EXPENSE_REACT from "../../assets/EXPENSE_MANAGE.jpg"
 import POKEDEX from "../../assets/POKEDEX.jpg"
 import TruthPulse from "../../assets/TruthPulse.jpg"
 import ACADUP_LOGO from "../../assets/android-app.png";
@@ -65,7 +66,7 @@ const projectsData = [
     category: REACT,
     link:"https://go-vahan.vercel.app/",
     description:
-      "A React-based transportation website's landing page offers a sleek and responsive interface, utilizing components for dynamic content showcasing services, pricing, and contact details. Real-time updates and smooth transitions enhance user experience. The design prioritizes simplicity, providing visitors with an efficient introduction to the transportation services offered.",
+    "An React application used to manage the user’s daily expenses in a more efficient way. Adding budget, categorizing expenses and getting the stastics and figures for a particular period of time is the main key feature of this application.",
   },
   {
     id: 7,
@@ -81,6 +82,15 @@ const projectsData = [
     icon: POKEDEX,
     category: REACT,
     link:"https://pokedex-two-gamma.vercel.app/",
+    description:
+      "A React-based Pokemon website which offers a sleek and responsive interface, utilizing components for dynamic content showcasing pokemon details. Real-time updates and smooth transitions enhance user experience. The design prioritizes simplicity and smooth user experience.",
+  },
+  {
+    id: 9,
+    name: "Expense Manager",
+    icon: EXPENSE_REACT,
+    category: REACT,
+    link:"https://expense-manager-fe-nine.vercel.app/login",
     description:
       "A React-based Pokemon website which offers a sleek and responsive interface, utilizing components for dynamic content showcasing pokemon details. Real-time updates and smooth transitions enhance user experience. The design prioritizes simplicity and smooth user experience.",
   }
