@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import useOnScreen from "../../hooks/userOnscreen";
 import Laptop from "../../assets/laptop.svg";
 import "./index.styles.scss";
@@ -6,6 +6,12 @@ import "./index.styles.scss";
 const Header = ({ setActive }: any) => {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref);
+  const [terminalDimensions, setTerminalDimensions] = useState({
+    height : 90,
+    width : 27
+  })
+
+  const terminalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     isVisible && setActive("home");
@@ -15,6 +21,13 @@ const Header = ({ setActive }: any) => {
     const element = document.getElementById("contact");
     element && element.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    if(terminalRef){
+      setTerminalDimensions({height:terminalRef.current?.clientHeight ?? 0,
+      width : terminalRef.current?.clientWidth ?? 0})
+    }
+  },[])
 
   return (
     <div className="page-header" id="home" ref={ref}>
@@ -28,7 +41,7 @@ const Header = ({ setActive }: any) => {
         </div>
         <img src={Laptop} alt="" className="laptop" />
       </div>
-      <div className="section">
+      <div className="section" ref={terminalRef}>
         <div className="terminal">
           <div className="terminal-header">
             <div className="terminal-buttons">
@@ -78,7 +91,7 @@ const Header = ({ setActive }: any) => {
               </a>
             </div>
             <div className="terminal-footer">
-              <div className="dimension">90 x 27</div>
+              <div className="dimension">{terminalDimensions.width} x {terminalDimensions.height}</div>
               <div className="footer-text">Nilesh's Laptop</div>
               <div className="time">{new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}</div>
             </div>
